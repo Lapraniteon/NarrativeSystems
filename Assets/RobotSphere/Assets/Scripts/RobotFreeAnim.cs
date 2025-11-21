@@ -4,37 +4,37 @@ using UnityEngine;
 
 public class RobotFreeAnim : MonoBehaviour {
 
-	Vector3 rot = Vector3.zero;
-	float rotSpeed = 40f;
+	//Vector3 rot = Vector3.zero;
+	//float rotSpeed = 40f;
 	Animator anim;
 
 	// Use this for initialization
 	void Awake()
 	{
 		anim = gameObject.GetComponent<Animator>();
-		gameObject.transform.eulerAngles = rot;
+		//gameObject.transform.eulerAngles = rot;
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
 		CheckKey();
-		gameObject.transform.eulerAngles = rot;
+		//gameObject.transform.eulerAngles = rot;
 	}
 
 	void CheckKey()
 	{
 		// Walk
-		if (Input.GetKey(KeyCode.W))
+		if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
 		{
 			anim.SetBool("Walk_Anim", true);
 		}
-		else if (Input.GetKeyUp(KeyCode.W))
+		else if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.D))
 		{
 			anim.SetBool("Walk_Anim", false);
 		}
 
-		// Rotate Left
+		/*// Rotate Left
 		if (Input.GetKey(KeyCode.A))
 		{
 			rot[1] -= rotSpeed * Time.fixedDeltaTime;
@@ -70,7 +70,7 @@ public class RobotFreeAnim : MonoBehaviour {
 			{
 				anim.SetBool("Open_Anim", false);
 			}
-		}
+		}*/
 	}
 
 }
