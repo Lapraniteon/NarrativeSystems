@@ -1847,21 +1847,21 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -0.59158564
+        z: -0.6945449
       TangentOut:
         x: 0
         y: 0
-        z: 0.59158564
+        z: 0.6945449
       Rotation:
         value:
-          x: 0.13547428
-          y: 0.6582633
-          z: 0.26083073
-          w: 0.69303936
+          x: 0.08329744
+          y: 0.6722216
+          z: 0.30478472
+          w: 0.66954154
     - Position:
-        x: 3.78096
-        y: 4.7629166
-        z: 0.28448486
+        x: 4.5699005
+        y: 5.9136314
+        z: 0.28460693
       TangentIn:
         x: -0.00000071525574
         y: -0.00000013411045
@@ -1883,17 +1883,17 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -3.0217052
+        z: -2.8355758
       TangentOut:
         x: 0
         y: 0
-        z: 1.8851873
+        z: 1.8592197
       Rotation:
         value:
-          x: -0.08214614
-          y: 0.6893132
-          z: 0.066483974
-          w: 0.7167142
+          x: -0.06929094
+          y: 0.69008243
+          z: 0.054204367
+          w: 0.71836406
     - Position:
         x: 19.534424
         y: 9.414375
@@ -17212,7 +17212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4431084402279646, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.013
+      value: 2.87
       objectReference: {fileID: 0}
     - target: {fileID: 4431084402279646, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -33724,6 +33724,8 @@ PlayableDirector:
   - key: {fileID: 1929407574406059379, guid: 55cc458d0b160db4b9b5790f84dce955, type: 2}
     value: {fileID: 404877526}
   - key: {fileID: -8360646475389675968, guid: 55cc458d0b160db4b9b5790f84dce955, type: 2}
+    value: {fileID: 404877525}
+  - key: {fileID: -9113373516251382628, guid: 55cc458d0b160db4b9b5790f84dce955, type: 2}
     value: {fileID: 404877525}
   m_ExposedReferences:
     m_References:
