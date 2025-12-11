@@ -33927,7 +33927,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 55cc458d0b160db4b9b5790f84dce955, type: 2}
-  m_InitialState: 0
+  m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -44090,7 +44090,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: e5d86ef5415fd5a42bc2b5670e063fba, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -65535,11 +65535,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5922868413498109815, guid: 0d7396d643f85aa41b6b7713f86f912b, type: 3}
       propertyPath: m_DrawTreesAndFoliage
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5922868413498109815, guid: 0d7396d643f85aa41b6b7713f86f912b, type: 3}
       propertyPath: m_DetailObjectDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6922764393439729157, guid: 0d7396d643f85aa41b6b7713f86f912b, type: 3}
       propertyPath: m_Name
@@ -80010,7 +80010,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 45
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -80036,8 +80036,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823688464}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00017397881, y: -0.23271142, z: 0.00033224138, w: 0.97254574}
-  m_LocalPosition: {x: 734.8, y: 14.67, z: 311.15}
+  m_LocalRotation: {x: 0.0002540412, y: -0.9232337, z: 0.0033131174, w: 0.38422462}
+  m_LocalPosition: {x: 784.59, y: 2.99, z: 269.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -85431,7 +85431,7 @@ Transform:
   m_GameObject: {fileID: 1962630172}
   serializedVersion: 2
   m_LocalRotation: {x: 0.12181325, y: -0.71383536, z: 0.12832864, w: 0.6775931}
-  m_LocalPosition: {x: 787.0703, y: 7.469431, z: 240.24173}
+  m_LocalPosition: {x: 787.0604, y: 7.0897617, z: 239.07352}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -86325,11 +86325,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4495903793272370575, guid: 3090c2fa64ca9e24fadc3789e3f8bc6c, type: 3}
       propertyPath: windSize
-      value: 1.1
+      value: 0.62
       objectReference: {fileID: 0}
     - target: {fileID: 4495903793272370575, guid: 3090c2fa64ca9e24fadc3789e3f8bc6c, type: 3}
       propertyPath: windSpeed
-      value: 5.8
+      value: 2.22
       objectReference: {fileID: 0}
     - target: {fileID: 4495903793272370575, guid: 3090c2fa64ca9e24fadc3789e3f8bc6c, type: 3}
       propertyPath: windStrength
