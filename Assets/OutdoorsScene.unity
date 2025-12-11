@@ -3810,13 +3810,14 @@ GameObject:
   m_Component:
   - component: {fileID: 126964126}
   - component: {fileID: 126964125}
+  - component: {fileID: 126964127}
   m_Layer: 0
   m_Name: RobotSideTrackingCam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &126964125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3837,11 +3838,11 @@ MonoBehaviour:
   m_StreamingVersion: 20241001
   m_LegacyPriority: 0
   Target:
-    TrackingTarget: {fileID: 0}
+    TrackingTarget: {fileID: 404877528}
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:
-    FieldOfView: 60
+    FieldOfView: 45
     OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 1000
@@ -3868,13 +3869,35 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 126964124}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.04811346, y: -0.72444135, z: 0.04857209, w: 0.68593776}
+  m_LocalRotation: {x: 0.048113454, y: -0.72444135, z: 0.048572082, w: 0.68593776}
   m_LocalPosition: {x: 749.71, y: 2.43, z: 358.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 7.838, y: -93.14, z: -0.178}
+  m_LocalEulerAnglesHint: {x: 0.001227851, y: 359.6516, z: 0.04795627}
+--- !u!95 &126964127
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126964124}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!43 &132238794
 Mesh:
   m_ObjectHideFlags: 0
@@ -6841,13 +6864,14 @@ GameObject:
   m_Component:
   - component: {fileID: 160315966}
   - component: {fileID: 160315965}
+  - component: {fileID: 160315967}
   m_Layer: 0
   m_Name: OverheadSatelliteCam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &160315965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6905,7 +6929,29 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 7.838, y: -93.14, z: -0.178}
+  m_LocalEulerAnglesHint: {x: 0.8127626, y: 0.000000453958, z: -0.000001866704}
+--- !u!95 &160315967
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160315964}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &161893774
 GameObject:
   m_ObjectHideFlags: 0
@@ -14417,6 +14463,12 @@ PlayableDirector:
     value: {fileID: 404877525}
   - key: {fileID: -1610926620115236619, guid: 49dbbf37e62caee40990e42b7e83cf55, type: 2}
     value: {fileID: 404877525}
+  - key: {fileID: 4196017139558160505, guid: 49dbbf37e62caee40990e42b7e83cf55, type: 2}
+    value: {fileID: 698676945}
+  - key: {fileID: 1738509024004947671, guid: 49dbbf37e62caee40990e42b7e83cf55, type: 2}
+    value: {fileID: 126964127}
+  - key: {fileID: -8245956625416958760, guid: 49dbbf37e62caee40990e42b7e83cf55, type: 2}
+    value: {fileID: 160315967}
   m_ExposedReferences:
     m_References:
     - 7a3c327ea15bbde4ebf78cbf7c9eee14: {fileID: 1962630174}
@@ -14424,7 +14476,9 @@ PlayableDirector:
     - d16fdd6e8cc60aa4c8b58deb7f8e2ece: {fileID: 0}
     - 19348c526b0c01441b89d8931c8c7e04: {fileID: 2133465690}
     - 376d3961508c21b489c92f46cea72240: {fileID: 698676943}
+    - aaf3c616da1e80c4692f4dfda66885a5: {fileID: 126964125}
     - cb9b68f065a33ca49be304016adecb9a: {fileID: 1318514043}
+    - abda095c0dcfe8d469ce460b6eec7f76: {fileID: 160315965}
 --- !u!4 &365350093
 Transform:
   m_ObjectHideFlags: 0
@@ -15484,6 +15538,11 @@ Animator:
 --- !u!1 &404877526 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1528915638184230, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
+  m_PrefabInstance: {fileID: 404877524}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &404877528 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4431084402279646, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
   m_PrefabInstance: {fileID: 404877524}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &405380467
@@ -27052,6 +27111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 698676944}
   - component: {fileID: 698676943}
+  - component: {fileID: 698676945}
   m_Layer: 0
   m_Name: EnterFieldCam
   m_TagString: Untagged
@@ -27116,7 +27176,29 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -9.793, y: -152.207, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.0003319318, y: 0.00002729633, z: 1.000331}
+--- !u!95 &698676945
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698676942}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &699481386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46277,6 +46359,10 @@ PrefabInstance:
     - target: {fileID: 1528915638184230, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
       propertyPath: m_Name
       value: robotSphere (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528915638184230, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4431084402279646, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
       propertyPath: m_LocalScale.x
@@ -66975,6 +67061,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: robotSphere (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1528915638184230, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4431084402279646, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
       propertyPath: m_LocalScale.x
       value: 20
@@ -68306,8 +68396,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823688464}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0002540412, y: -0.9232337, z: 0.0033131174, w: 0.38422462}
-  m_LocalPosition: {x: 784.59, y: 2.99, z: 269.79}
+  m_LocalRotation: {x: 0.3177922, y: -0.411845, z: 0.15589754, w: 0.83969504}
+  m_LocalPosition: {x: 729.4644, y: 42.08798, z: 446.03326}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
