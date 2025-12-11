@@ -14364,6 +14364,7 @@ GameObject:
   m_Component:
   - component: {fileID: 365350093}
   - component: {fileID: 365350092}
+  - component: {fileID: 365350094}
   m_Layer: 0
   m_Name: FieldTimeline
   m_TagString: Untagged
@@ -14410,6 +14411,12 @@ PlayableDirector:
     value: {fileID: 448039412}
   - key: {fileID: 9118343746540352395, guid: 49dbbf37e62caee40990e42b7e83cf55, type: 2}
     value: {fileID: 1823688469}
+  - key: {fileID: -7018067101911720602, guid: 49dbbf37e62caee40990e42b7e83cf55, type: 2}
+    value: {fileID: 404877526}
+  - key: {fileID: 1636642923417630180, guid: 49dbbf37e62caee40990e42b7e83cf55, type: 2}
+    value: {fileID: 404877525}
+  - key: {fileID: -1610926620115236619, guid: 49dbbf37e62caee40990e42b7e83cf55, type: 2}
+    value: {fileID: 404877525}
   m_ExposedReferences:
     m_References:
     - 7a3c327ea15bbde4ebf78cbf7c9eee14: {fileID: 1962630174}
@@ -14433,6 +14440,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &365350094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365350091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 7803a23cd50d4a94d8fc60c05f6923f5, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 365350092}
+          m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!43 &367114784
 Mesh:
   m_ObjectHideFlags: 0
@@ -17544,8 +17581,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6431e34985136f41ab8978cf3e07bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  director: {fileID: 916287480}
-  pauseOnStart: 0
+  director: {fileID: 728834138}
+  pauseOnStart: 1
   resumeOnSuccess: 1
   resumeOnFail: 0
   resumeDelayOnSuccess: 0
@@ -17578,30 +17615,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 728834138}
-        m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
-        m_MethodName: Stop
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 365350092}
-        m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -27097,13 +27110,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 698676942}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.008394751, y: -0.9587353, z: -0.028474683, w: 0.28274608}
-  m_LocalPosition: {x: 737.40015, y: 2.4052594, z: 333.55103}
+  m_LocalRotation: {x: -0.020497777, y: -0.9671884, z: -0.08286119, w: 0.23929174}
+  m_LocalPosition: {x: 737.51, y: 3.95, z: 336.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -9.793, y: -152.207, z: 0}
 --- !u!1001 &699481386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30112,6 +30125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 728834139}
   - component: {fileID: 728834138}
+  - component: {fileID: 728834140}
   m_Layer: 0
   m_Name: MainTimeline
   m_TagString: Untagged
@@ -30132,7 +30146,7 @@ PlayableDirector:
   m_InitialState: 1
   m_WrapMode: 0
   m_DirectorUpdateMode: 1
-  m_InitialTime: 0
+  m_InitialTime: 27
   m_SceneBindings:
   - key: {fileID: -2028844341264765658, guid: 55cc458d0b160db4b9b5790f84dce955, type: 2}
     value: {fileID: 1823688469}
@@ -30156,6 +30170,10 @@ PlayableDirector:
     value: {fileID: 2115339781}
   - key: {fileID: -6074768088314957964, guid: 55cc458d0b160db4b9b5790f84dce955, type: 2}
     value: {fileID: 448039412}
+  - key: {fileID: 7547915921512419717, guid: 55cc458d0b160db4b9b5790f84dce955, type: 2}
+    value: {fileID: 728834140}
+  - key: {fileID: 4150101885698796505, guid: 55cc458d0b160db4b9b5790f84dce955, type: 2}
+    value: {fileID: 365350094}
   m_ExposedReferences:
     m_References:
     - 7a3c327ea15bbde4ebf78cbf7c9eee14: {fileID: 1962630174}
@@ -30178,6 +30196,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &728834140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728834137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 1d8cc6b44efdc004d995ba3139e21fe1, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 728834138}
+          m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
+          m_MethodName: Stop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &729990299
 PrefabInstance:
   m_ObjectHideFlags: 0
