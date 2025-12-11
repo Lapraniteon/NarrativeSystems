@@ -5280,6 +5280,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: robotSphere (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1528915638184230, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4431084402279646, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
       propertyPath: m_LocalScale.x
       value: 20
@@ -21843,45 +21847,27 @@ MonoBehaviour:
   - m_EditModeType: 1
     m_Knots:
     - Position:
-        x: -0.27600098
-        y: 0.76804733
-        z: -0.496521
+        x: 6.927124
+        y: 6.403103
+        z: -6.47583
       TangentIn:
         x: -0
         y: -0
-        z: -1.1848325
+        z: -1.3110675
       TangentOut:
         x: 0
         y: 0
-        z: 1.1848325
+        z: 1.3110675
       Rotation:
         value:
-          x: -0.22065239
-          y: 0.8632011
-          z: 0.08849262
-          w: 0.44538248
+          x: -0.12577105
+          y: 0.8439193
+          z: -0.10456346
+          w: 0.51092887
     - Position:
-        x: 8.371582
-        y: 4.9069424
-        z: -7.458679
-      TangentIn:
-        x: -0.0000009536743
-        y: -0.00000023841858
-        z: -8.614706
-      TangentOut:
-        x: 0.0000009536743
-        y: 0.0000002682209
-        z: 4.307352
-      Rotation:
-        value:
-          x: -0.07727055
-          y: 0.8773874
-          z: -0.006593184
-          w: 0.47347355
-    - Position:
-        x: 19.721313
-        y: 3.8683681
-        z: -10.909363
+        x: 18.578156
+        y: 5.774235
+        z: -12.454773
       TangentIn:
         x: -0.0000019073486
         y: -0.00000020861626
@@ -21897,27 +21883,25 @@ MonoBehaviour:
           z: 0.00067954784
           w: 0.31377324
     - Position:
-        x: 31.169128
-        y: 4.775221
-        z: -23.241638
+        x: 23.453918
+        y: 2.835186
+        z: -20.165588
       TangentIn:
         x: -0
         y: -0
-        z: -1.6851109
+        z: -0.95847666
       TangentOut:
         x: 0
         y: 0
-        z: 1.6851109
+        z: 0.95847666
       Rotation:
         value:
-          x: -0.020999094
-          y: 0.9303106
-          z: 0.020671384
-          w: 0.36558703
+          x: 0.066489294
+          y: 0.947535
+          z: -0.14227131
+          w: 0.27841625
     m_MetaData:
     - Mode: 0
-      Tension: 0.5
-    - Mode: 4
       Tension: 0.5
     - Mode: 4
       Tension: 0.5
@@ -33943,7 +33927,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 55cc458d0b160db4b9b5790f84dce955, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -33964,9 +33948,15 @@ PlayableDirector:
     value: {fileID: 2133465692}
   - key: {fileID: -115964968471199300, guid: 55cc458d0b160db4b9b5790f84dce955, type: 2}
     value: {fileID: 1318514045}
+  - key: {fileID: -3688834987428458477, guid: 55cc458d0b160db4b9b5790f84dce955, type: 2}
+    value: {fileID: 1318514045}
+  - key: {fileID: -3569383893668644353, guid: 55cc458d0b160db4b9b5790f84dce955, type: 2}
+    value: {fileID: 2115339781}
   m_ExposedReferences:
     m_References:
     - 7a3c327ea15bbde4ebf78cbf7c9eee14: {fileID: 1962630174}
+    - ba816a25e2ff07146998394d71e9ef8b: {fileID: 2115339779}
+    - d16fdd6e8cc60aa4c8b58deb7f8e2ece: {fileID: 0}
     - 19348c526b0c01441b89d8931c8c7e04: {fileID: 2133465690}
     - cb9b68f065a33ca49be304016adecb9a: {fileID: 1318514043}
 --- !u!4 &728834139
@@ -57435,12 +57425,12 @@ Transform:
   m_GameObject: {fileID: 1318514041}
   serializedVersion: 2
   m_LocalRotation: {x: -0.015074305, y: 0.97042817, z: -0.0629015, w: -0.23256254}
-  m_LocalPosition: {x: 754.38995, y: 11.670001, z: 279.97003}
+  m_LocalPosition: {x: 751.51, y: 17.089996, z: 289.00998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 7.417, y: -153.047, z: 0.178}
+  m_LocalEulerAnglesHint: {x: 0.0001141392, y: 0.3163123, z: 359.9588}
 --- !u!95 &1318514045
 Animator:
   serializedVersion: 7
@@ -64158,6 +64148,10 @@ PrefabInstance:
     - target: {fileID: 1528915638184230, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
       propertyPath: m_Name
       value: robotSphere (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528915638184230, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4431084402279646, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
       propertyPath: m_LocalScale.x
@@ -80016,7 +80010,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 45
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -80042,8 +80036,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823688464}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.015074307, y: 0.97042817, z: -0.062901504, w: -0.23256254}
-  m_LocalPosition: {x: 754.38995, y: 11.670001, z: 279.97003}
+  m_LocalRotation: {x: 0.00017397881, y: -0.23271142, z: 0.00033224138, w: 0.97254574}
+  m_LocalPosition: {x: 734.8, y: 14.67, z: 311.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -85437,7 +85431,7 @@ Transform:
   m_GameObject: {fileID: 1962630172}
   serializedVersion: 2
   m_LocalRotation: {x: 0.12181325, y: -0.71383536, z: 0.12832864, w: 0.6775931}
-  m_LocalPosition: {x: 787.37494, y: 12.700001, z: 260.6627}
+  m_LocalPosition: {x: 787.0703, y: 7.469431, z: 240.24173}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -92639,6 +92633,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: robotSphere (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1528915638184230, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4431084402279646, guid: 8e0f285c21cdcf14e8d5c06c57ba936b, type: 3}
       propertyPath: m_LocalScale.x
       value: 20
@@ -92714,13 +92712,14 @@ GameObject:
   m_Component:
   - component: {fileID: 2115339780}
   - component: {fileID: 2115339779}
+  - component: {fileID: 2115339781}
   m_Layer: 0
   m_Name: FieldOverviewExtraWideCam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2115339779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92773,12 +92772,34 @@ Transform:
   m_GameObject: {fileID: 2115339778}
   serializedVersion: 2
   m_LocalRotation: {x: 0.00017397881, y: -0.23271142, z: 0.00033224138, w: 0.97254574}
-  m_LocalPosition: {x: 733.19, y: 14.14, z: 312.97}
+  m_LocalPosition: {x: 734.8, y: 14.67, z: 311.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0.028, y: -26.914, z: 0.032}
+  m_LocalEulerAnglesHint: {x: 359.9717, y: -0.0004742022, z: -0.0003830176}
+--- !u!95 &2115339781
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115339778}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!43 &2119778938
 Mesh:
   m_ObjectHideFlags: 0
