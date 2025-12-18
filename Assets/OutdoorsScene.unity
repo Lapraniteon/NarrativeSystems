@@ -48324,6 +48324,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2619378971236727730, guid: cdb30a236ae4ea146acc9d3bab111744, type: 3}
   m_PrefabInstance: {fileID: 1207986638}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1213122850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1213122852}
+  - component: {fileID: 1213122851}
+  m_Layer: 0
+  m_Name: Decal Projector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1213122851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213122850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19d9143a39eb3b46bc4563e9889cfbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 89f55b36ddc9dc94db9c52cf06a27080, type: 2}
+  m_DrawDistance: 1000
+  m_FadeScale: 0.9
+  m_StartAngleFade: 180
+  m_EndAngleFade: 180
+  m_UVScale: {x: 1, y: 1}
+  m_UVBias: {x: 0, y: 0}
+  m_AffectsTransparency: 0
+  m_TransparentTextureResolution:
+    m_Override: 256
+    m_UseOverride: 1
+    m_Level: 0
+  m_DecalLayerMask: 1
+  m_ScaleMode: 1
+  m_Offset: {x: 0, y: 0, z: 1.2745588}
+  m_Size: {x: 1, y: 1, z: 3.5491176}
+  m_FadeFactor: 1
+  m_Version: 3
+--- !u!4 &1213122852
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213122850}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.09951383, y: -0.9950362, z: 0.00000011121541, w: 0.0000011120403}
+  m_LocalPosition: {x: 769.79, y: 3.32, z: 217.33}
+  m_LocalScale: {x: 3.079828, y: 1.865771, z: 1.865771}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: -11.422}
 --- !u!1001 &1244324704
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56912,11 +56974,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5922868413498109815, guid: 0d7396d643f85aa41b6b7713f86f912b, type: 3}
       propertyPath: m_DrawTreesAndFoliage
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5922868413498109815, guid: 0d7396d643f85aa41b6b7713f86f912b, type: 3}
       propertyPath: m_DetailObjectDistance
-      value: 40
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6922764393439729157, guid: 0d7396d643f85aa41b6b7713f86f912b, type: 3}
       propertyPath: m_Name
@@ -82579,3 +82641,4 @@ SceneRoots:
   - {fileID: 577335671}
   - {fileID: 1451162581}
   - {fileID: 58185788}
+  - {fileID: 1213122852}
