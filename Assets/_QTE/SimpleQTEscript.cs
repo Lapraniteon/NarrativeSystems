@@ -38,7 +38,8 @@ public class SimpleQTE : MonoBehaviour
         IsActive = true;
 
         if (pauseOnStart && director && director.state == PlayState.Playing)
-            director.Pause();
+            //director.Pause();
+            director.playableGraph.GetRootPlayable(0).SetSpeed(0f);
 
         onQTEStart?.Invoke();
     }
@@ -92,7 +93,8 @@ public class SimpleQTE : MonoBehaviour
             yield return new WaitForSeconds(delay);
 
         if (doResume && director)
-            director.Resume();
+            //director.Resume();
+            director.playableGraph.GetRootPlayable(0).SetSpeed(1f);
 
         onQTEFinished?.Invoke();
     }
