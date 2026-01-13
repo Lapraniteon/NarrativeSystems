@@ -176,7 +176,9 @@ AudioMixerController:
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: 6f1ecc1086072b744b3e360207342e91
+    name: TowerVolume
   m_AudioMixerGroupViews:
   - guids:
     - efbbbda9e1c5c094ca84d9c18b54098a
@@ -236,6 +238,7 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 332f249b6efcc0944b217a142a1c783a
   m_FloatValues:
+    6f1ecc1086072b744b3e360207342e91: -32.77572
     da6335f82b5b3894db04230f8e079bc9: 8731
     3946c4b9ffbc01743a4f30a116543ca9: 468
     eaefb2ba4e8bb914a8df9ceb09ff412c: 0
