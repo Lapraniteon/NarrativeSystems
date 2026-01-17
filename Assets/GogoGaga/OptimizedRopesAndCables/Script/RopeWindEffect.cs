@@ -33,7 +33,7 @@ namespace GogoGaga.OptimizedRopesAndCables
         }
         void Start()
         {
-            windSeed = Random.Range(-0.3f, 0.3f);
+            windSeed = Random.Range(-0.8f, 0.8f);
         }
 
         // Update is called once per frame
