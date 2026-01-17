@@ -1,4 +1,5 @@
-﻿ using UnityEngine;
+﻿ using Unity.Properties;
+ using UnityEngine;
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
 #endif
@@ -31,6 +32,7 @@ namespace StarterAssets
         public AudioClip LandingAudioClip;
         public AudioClip[] FootstepAudioClips;
         [Range(0, 1)] public float FootstepAudioVolume = 0.5f;
+        public AudioSource audioSource;
 
         [Space(10)]
         [Tooltip("The height the player can jump")]
@@ -378,6 +380,16 @@ namespace StarterAssets
                     var index = Random.Range(0, FootstepAudioClips.Length);
                     AudioSource.PlayClipAtPoint(FootstepAudioClips[index], transform.TransformPoint(_controller.center), FootstepAudioVolume);
                 }
+            }
+        }
+        
+        public void OnFootstepSimple()
+        {
+            if (FootstepAudioClips.Length > 0)
+            {
+                var index = Random.Range(0, FootstepAudioClips.Length);
+                audioSource.PlayOneShot(FootstepAudioClips[index], FootstepAudioVolume);
+                //AudioSource.PlayClipAtPoint(FootstepAudioClips[index], transform.TransformPoint(_controller.center), FootstepAudioVolume);
             }
         }
 
